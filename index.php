@@ -11,6 +11,7 @@
         <nav class="menuBar">
 
             <div class="navCenter">
+                <a href="#" onclick=hidesideBar()><img src="images/close.png" alt=""></a>
                 <a href="#">Blog</a>
                 <a href="#">Projects</a>
                 <a href="#">About us</a>
@@ -18,26 +19,27 @@
             </div>
 
             <div class="navRight">
-                <button id="profileBtn" class="showHide">Subscribe</button>
+                <button id="profileBtn" class="hideonMobile">Subscribe</button>
             </div>
         </nav>
 
     <!------------------------------------>
-         <nav  >
+         <nav  class="sidebar">
             <div class="logo">
                 <a href="#" >My Website</a>
             </div>
 
             <div class="navCenter">
-                <a href="#">Blog</a>
-                <a href="#">Projects</a>
-                <a href="#">About us</a>
-                <a href="#">Contact us</a>
+                <a class="hideonMobile" href="#">Blog</a>
+                <a class="hideonMobile" href="#">Projects</a>
+                <a class="hideonMobile" href="#">About us</a>
+                <a class="hideonMobile" href="#">Contact us</a>
             </div>
 
             <div class="navRight">
-                <button id="profileBtn" onclick=showLogin()>Subscribe</button>
+                <button id="profileBtn">Subscribe</button>
             </div>
+            <a href="#" onclick=showSidebar() class="menu"><img src="images/menu.png" alt=""></a>
         </nav>
 
         <form action="" method="post">
@@ -57,11 +59,16 @@
         </form>
 
         <script>
-
-            function showLogin(){
-                sidebar =  form.querySelector(".showHide");
-                sidebar.style.display = "flex";
+            function hidesideBar(){
+                sidebarHide = document.querySelector(".menuBar");
+                sidebarHide.style.display = "none";
             }
+            function showSidebar(){
+                sidebarShow = document.querySelector(".sidebar");
+                sidebarShow.style.display = "block";
+
+            }
+            
 
         </script>
 </body>

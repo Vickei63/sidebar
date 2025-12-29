@@ -80,18 +80,31 @@ nav.menuBar{
     justify-content: flex-start;
     width: 250px;
 }
+a img{
+    width: 200px;
+}
 nav.menuBar .navCenter{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
 }
+
 @media screen and (max-width: 821px ){
     form{
         width: 55vh;
         padding: 20px;
     }
+    .navCenter a{
+        display: none;
+    }
     
+    .hideonMobile{
+    display: none;
+    }
+    .menu{
+        display: block;
+
+    }
 }
 
