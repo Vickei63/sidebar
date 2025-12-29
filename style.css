@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: lightgray;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    padding: 20px;
+}
+.logo a{
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+.logo a:hover{
+    color: bisque;
+}
+.navCenter a{
+    text-decoration: none;
+    color: white;
+    margin: 25px;
+    width: 100% ;
+    font-weight: 600;
+    font-size: 20px;
+}
+.navCenter a:hover{
+   color: bisque;
+}
+button{
+    background: red;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    border: 0;
+    width: 100px;
+    cursor: pointer;
+}
+form{
+    max-width: 80vh;
+    background: white;
+    padding: 40px;
+    margin: 120px auto ;
+    border-radius: 20px;
+}
+form h2{
+    text-align:center;
+}
+form .inputs input{
+    width: 90% ;
+    outline: none;
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+}
+#loginBtn{
+    background: black;
+    color: white;
+    width: 30vh;
+    margin-left: 25% ;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 21px;
+}
+nav.menuBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    height: 100vh;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 250px;
+}
+nav.menuBar .navCenter{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+}
+@media screen and (max-width: 821px ){
+    form{
+        width: 55vh;
+        padding: 20px;
+    }
+    
+}
+
