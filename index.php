@@ -64,8 +64,8 @@
                 sidebarHide.style.display = "none";
             }
             function showSidebar(){
-                sidebarShow = document.querySelector(".sidebar");
-                sidebarShow.style.display = "block";
+                sidebarShow = document.querySelector(".menuBar");
+                sidebarShow.style.display = "flex";
 
             }
             
