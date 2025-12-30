@@ -1,3 +1,11 @@
+
+<?php
+
+    include("connection.php");
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,21 +50,29 @@
             <a href="#" onclick=showSidebar() class="menu"><img src="images/menu.png" alt="menu button" ></a>
         </nav>
 
+
+        <!------FORM INPUT---->
+
         <form action="" method="post">
             <h2>Login Page</h2>
 
             <div class="inputs">
                 <label for="">Username:</label><br><br>
-                <input type="text"><br><br>
-                <label for="">Email:</label><br><br>
-                <input type="email"><br><br>
-                <label for="">Password:</label><br><br>
-                <input type="text"><br><br>
+                <input type="text" name="username"><br><br>
 
-                <input type="submit" value="Login" id="loginBtn">
+                <label for="">Email:</label><br><br>
+                <input type="email" name="email"><br><br>
+
+                <label for="">Password:</label><br><br>
+                <input type="text" name="password"><br><br>
+
+                <input type="submit" value="Login" id="loginBtn" name="submit">
             </div>
 
         </form>
+
+
+
 
         <script>
             function hidesideBar(){

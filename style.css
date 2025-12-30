@@ -12,7 +12,7 @@ nav{
     justify-content: space-between;
     background: black;
     padding: 20px;
-    width: 100%;
+
 }
 .logo a{
     font-size: 25px;
@@ -90,14 +90,14 @@ nav.menuBar .navCenter{
     align-items: flex-start;
     justify-content: flex-start;
 }
-
+.menuBar{
+    display: none;
+}
 @media screen and (max-width: 821px ){
     form{
         width: 55vh;
         padding: 20px;
     }
-    
-    
     .hideonMobile{
     display: none;
     }
