@@ -11,7 +11,7 @@
         <nav class="menuBar">
 
             <div class="navCenter">
-                <a href="#" onclick=hidesideBar()><img src="images/close.png" alt=""></a>
+                <a href="#" onclick=hidesideBar()><img src="images/close.png" alt="close button" ></a>
                 <a href="#">Blog</a>
                 <a href="#">Projects</a>
                 <a href="#">About us</a>
@@ -39,7 +39,7 @@
             <div class="navRight">
                 <button id="profileBtn">Subscribe</button>
             </div>
-            <a href="#" onclick=showSidebar() class="menu"><img src="images/menu.png" alt=""></a>
+            <a href="#" onclick=showSidebar() class="menu"><img src="images/menu.png" alt="menu button" ></a>
         </nav>
 
         <form action="" method="post">
