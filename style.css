@@ -12,6 +12,7 @@ nav{
     justify-content: space-between;
     background: black;
     padding: 20px;
+    width: 100%;
 }
 .logo a{
     font-size: 25px;
@@ -95,9 +96,7 @@ nav.menuBar .navCenter{
         width: 55vh;
         padding: 20px;
     }
-    .navCenter a{
-        display: none;
-    }
+    
     
     .hideonMobile{
     display: none;

@@ -19,7 +19,7 @@
             </div>
 
             <div class="navRight">
-                <button id="profileBtn" class="hideonMobile">Subscribe</button>
+                <button id="profileBtn" >Subscribe</button>
             </div>
         </nav>
 
@@ -37,7 +37,7 @@
             </div>
 
             <div class="navRight">
-                <button id="profileBtn">Subscribe</button>
+                <button id="profileBtn" class="hideonMobile">Subscribe</button>
             </div>
             <a href="#" onclick=showSidebar() class="menu"><img src="images/menu.png" alt="menu button" ></a>
         </nav>
