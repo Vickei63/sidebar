@@ -1,10 +1,7 @@
 
 <?php
-
     include("connection.php");
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,15 +16,15 @@
         <nav class="menuBar">
 
             <div class="navCenter">
-                <a href="#" onclick=hidesideBar()><img src="images/close.png" alt="close button" ></a>
-                <a href="#">Blog</a>
-                <a href="#">Projects</a>
-                <a href="#">About us</a>
-                <a href="#">Contact us</a>
+                <a class="hideonDesktop" href="#" onclick=hidesideBar()><img src="images/close.png" alt="close button" ></a>
+                <a class="hideonDesktop" href="#">Blog</a>
+                <a class="hideonDesktop" href="#">Projects</a>
+                <a class="hideonDesktop" href="#">About us</a>
+                <a class="hideonDesktop" href="#">Contact us</a>
             </div>
 
             <div class="navRight">
-                <button id="profileBtn" >Subscribe</button>
+                <button id="profileBtn" class="hideonDesktop" >Subscribe</button>
             </div>
         </nav>
 
@@ -53,18 +50,18 @@
 
         <!------FORM INPUT---->
 
-        <form action="" method="post">
+        <form action="login.php" method="post">
             <h2>Login Page</h2>
 
             <div class="inputs">
                 <label for="">Username:</label><br><br>
-                <input type="text" name="username"><br><br>
+                <input type="text" name="username" id="username"><br><br>
 
                 <label for="">Email:</label><br><br>
-                <input type="email" name="email"><br><br>
+                <input type="email" name="email" id="email"><br><br>
 
                 <label for="">Password:</label><br><br>
-                <input type="text" name="password"><br><br>
+                <input type="text" name="password" id="password"><br><br>
 
                 <input type="submit" value="Login" id="loginBtn" name="submit">
             </div>
@@ -83,6 +80,23 @@
                 sidebarShow = document.querySelector(".menuBar");
                 sidebarShow.style.display = "flex";
 
+            }
+
+            var user = document.form.username.value;
+            var pass = document.form.password.value;
+            var email = document.form.email.value;
+
+            if(user.length == ""&& pass.length == "" && email.length == ""){
+                alert("Username and password empty !!!");
+            }
+            else if(user.length == ""){
+                alert("Username  empty");
+            }
+            else if(pass.length == ""){
+                alert("Password  empty");
+            }
+            else if(email.length == ""){
+                alert("Email  empty");
             }
             
 

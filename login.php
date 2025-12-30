@@ -10,9 +10,21 @@
         $email = $_POST["email"];
         $password = $_POST["password"];
 
-        $sql = "select * from users where username = '$username' email ='$email' password = '$password'";
-        $results = mysqli_query($conn,$sql);
-        $row = mysqli_num_rows($results);
+        $sql = "SELECT  * FROM users WHERE username = '$username' and email ='$email' and password = '$password' ";
+        $result = mysqli_query($conn,$sql);
+        $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+        $count = mysqli_num_rows($result);
+
+        if($count == 1){
+            header("location:welcome.php");
+        }
+        else{
+            echo "<script>
+                    window.location.href = 'index.php';
+                    alert('Login failed.Invalid username, email or password');
+                </script>";
+                exit;
+        }
 
         
 
