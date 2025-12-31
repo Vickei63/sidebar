@@ -13,7 +13,7 @@
         $sql = "SELECT  * FROM users WHERE username = '$username' and email ='$email' and password = '$password' ";
         $result = mysqli_query($conn,$sql);
         $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-        $count = mysqli_num_rows($result);
+        $count = mysqli_num_rows($row);
 
         if($count == 1){
             header("location:welcome.php");
