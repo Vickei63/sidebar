@@ -91,9 +91,6 @@ nav.menuBar .navCenter{
     justify-content: flex-start;
 }
 
-.menu img{
-    display: none;
-}
 @media screen and (max-width: 821px ){
     form{
         width: 55vh;
@@ -107,19 +104,5 @@ nav.menuBar .navCenter{
 
     }
 }
-@media screen and (min-width: 200px) {
-    form{
-        width: 45vh ;
-        padding: 20px auto;
-        margin: 100px auto;
-    }
-    form .inputs input{
-        padding: 5px;
-        width: 100%;
-    }
-    nav{
-        width: 100%;
-    }
 
-}
 
